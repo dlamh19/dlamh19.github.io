@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.navBar {
+    background: #131313;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.navBarContainer {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    width: 100%;
+    max-width: 1400px;
+}
+
+#navBarLogo {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-family: 'Spartan', sans-serif;
+    
+}
+
+.navBarMenu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 550px;
+    font-family: 'Spartan', sans-serif;
+
+}
+
+.navBarItem {
+    text-decoration: none;
+    color: white;
+    list-style-type: none;
+}
+
+.navBarItem a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 500;
+    padding-right: 30px;
+    
+}
+
+.navBarBtn {
+    list-style-type: none;
+}
+
+.button {
+    color: white;
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.heroSection {
+    background: black;
+    padding: 0 60px;
+    color: white;
+    font-family: 'Spartan', sans-serif;
+
+}
+
+.heroContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 900px;
+}
+
+.columnLeft {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.columnLeft h1 {
+    margin: 15px 0px;
+    margin-left: 50px;
+    font-size: 4rem;
+}
+
+.columnLeft p {
+    margin: 15px 0px;
+    margin-left: 50px;
+}
+
+.columnRight {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 150px;
+}
+
+.heroImg {
+    width: 115%;
+    height: 115%;
+    margin-left: 50px;
+}
+
+@media screen and (max-width: 1460px) {
+
+    #navBarLogo {
+        margin-left: 20px;
+    }
+
+    .navBarBtn {
+        margin-right: 20px;
+    }
+
+    .navBarMenu {
+        max-width: 600px;
+        
+    }
+    
+}
