@@ -72,6 +72,25 @@
     font-weight: 500;
 }
 
+@media screen and (max-width: 1460px) {
+
+    #navBarLogo {
+        margin-left: 20px;
+    }
+
+    .navBarBtn {
+        margin-right: 20px;
+    }
+
+    .navBarMenu {
+        max-width: 600px;
+        
+    }
+    
+}
+
+
+/* Hero Section  */
 .heroSection {
     background: black;
     padding: 0 60px;
@@ -119,19 +138,103 @@
     margin-left: 50px;
 }
 
-@media screen and (max-width: 1460px) {
+@media screen and (max-width: 1100px) {
 
-    #navBarLogo {
-        margin-left: 20px;
+    .heroSection {
+        height: 900px;
+        max-height: 100%;
     }
 
-    .navBarBtn {
-        margin-right: 20px;
+    .heroContainer {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        height: 900px;
+        max-height: 100%;
+
     }
 
-    .navBarMenu {
-        max-width: 600px;
-        
+    .columnLeft {
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 400px;
+        max-width: 100%;
     }
+
+    .columnRight {
+        justify-content: center;
+        align-items: center;
+        margin: 40px 40px;
+    }
+
+    .heroImg {
+        width: 100%;
+        height: 100%;
+    }
+
+    
+
+    
+}
+
+/* About Section */
+
+.aboutSection { 
+    background: black;
+}
+
+.aboutContainer {
+    color: white;
+    font-family: 'Spartan', sans-serif;
+
+}
+
+.aboutContent {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr;
+    
+    
+}
+
+.mainImg {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 50px 0;
+    padding-bottom: 100px;
+}
+
+.meImg {
+    width: 500px;
+    max-width: 100%;
+}
+
+.aboutText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin: 50px 0;
+    padding-bottom: 100px;
+
+}
+
+.aboutText h1 {
+    text-align: center;
+    margin: 20px 30px;
+    
+}
+
+.aboutText h2 {
+    text-align: center;
+    margin: 20px 30px;
+    
+}
+
+.aboutText p {
+    text-align: center;
+    margin: 20px 30px;
     
 }
